@@ -1,4 +1,4 @@
-def call(Map args} {
+def call(Map args) {
   if(!args.imageName) {
     currentBuild.result = "FAILURE"
     throw new Exception("You must specify the argument imageName")
