@@ -25,7 +25,7 @@ def call(Map args) {
     stages {
       stage('Build') {
         steps {
-          script: "docker build -t ${env.IMAGE_NAME}:${env.IMAGE_TAG} ."
+          sh script: "docker build -t ${env.IMAGE_NAME}:${env.IMAGE_TAG} ."
         }
       }
 
