@@ -8,9 +8,7 @@ def call(Map args) {
   String name = args.name
 
   pipeline {
-    agent {
-      any
-    }
+    agent any
 
     stages {
       stage('Greeting') {
