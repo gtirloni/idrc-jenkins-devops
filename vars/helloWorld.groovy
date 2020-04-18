@@ -13,7 +13,7 @@ def call(Map args) {
     stages {
       stage('Greeting') {
         steps {
-          sh script: "echo 'Hello ${name}"
+          sh script: "echo 'Hello ${name}'"
         }
       }
     }
